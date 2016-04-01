@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
+    android:background="@drawable/background_signupfirst"
     android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="Create an account"
-        android:textColor="#f2e6e6"
+        android:textColor="#646363"
         android:textAlignment="center"
         android:textSize="18sp" />
 
@@ -106,19 +106,24 @@
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:text="Cancle"
+            android:layout_marginRight="10dp"
+            style="@style/CancleButton"
+            android:text="CANCLE"
+            android:textStyle="normal"
             android:textSize="12sp" />
         <Button
             android:id="@+id/btn_quaylai"
             android:layout_width="0dp"
+            style="@style/NavigationButton"
             android:layout_weight="1"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
-            android:text="Done"
+            android:text="DONE"
+            android:textStyle="normal"
             android:textSize="12sp" />
     </LinearLayout>
     <TextView

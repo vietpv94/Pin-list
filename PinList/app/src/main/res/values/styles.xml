@@ -7,5 +7,34 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="ActionButton" parent="@style/_Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/button_blue</item>
+    </style>
+    <style name="NavigationButton" parent="@style/_Button">
+        <item name="android:textColor">#ff06222e</item>
+        <item name="android:background">@drawable/button_white</item>
+    </style>
+    <style name="CancleButton" parent="@style/_Button">
+        <item name="android:textColor">#ff06222e</item>
+        <item name="android:background">@drawable/button_cancle</item>
+    </style>
+    <style name="MoneyButton" parent="@style/_Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/button_green</item>
+    </style>
+    <style name="_Button" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDx">-1.5</item>
+        <item name="android:shadowDy">1.5</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
 </resources>

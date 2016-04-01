@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="signup_gray_text">#ff555555</color>
+    <color name="transparent">#00000000</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="pressed">#aa81cfeb</color>
+    <color name="selected">#aa61afeb</color>
+    <color name="or_line">#ff888888</color>
 </resources>
