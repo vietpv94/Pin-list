@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signupfirst"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@id/loginWithFacebook"
+        style="@style/NavigationButton"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/googleplus_icon"
+            android:drawablePadding="5.0dip"
+            android:gravity="center"
+            android:text="  Sign in with Google"
+            android:textColor="#ff000000" />
+    </FrameLayout>
+    <include layout="@layout/or_line" />
+    <FrameLayout
+        android:id="@id/loginWithFacebook"
+        style="@style/NavigationButton"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/fb_icon"
+            android:drawablePadding="3.0dip"
+            android:gravity="center"
+            android:text="  Sign in with Facebook"
+            android:textColor="#ff000000" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dip"
+        android:text="Or sign in with your account"
+        android:textColor="#837d5c"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#faf4f4"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#faf4f4"
+            android:hint="    Your email address *"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#faf4f4"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#faf4f4"
+            android:hint="    Your password *"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:text="CANCLE"
+            android:textStyle="normal"
+            style="@style/CancleButton"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/btn_quaylai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/NavigationButton"
+            android:layout_margin="10dp"
+            android:layout_height="35dp"
+            android:textStyle="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:text="DONE"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="Let's create an account and enjoy!"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/txt_forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:autoLink="all"
+            android:text="Forgot your password?"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_forgetpass"
+            android:autoLink="all"
+            android:text="Create an account"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

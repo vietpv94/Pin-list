@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signupfirst"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@id/loginWithFacebook"
+        style="@style/NavigationButton"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/googleplus_icon"
+            android:drawablePadding="5.0dip"
+            android:gravity="center"
+            android:text="  Sign in with Google"
+            android:textColor="#ff000000" />
+    </FrameLayout>
+    <include layout="@layout/or_line" />
+    <FrameLayout
+        android:id="@id/loginWithGoogle"
+        style="@style/NavigationButton"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/fb_icon"
+            android:drawablePadding="3.0dip"
+            android:gravity="center"
+            android:text="  Sign in with Facebook"
+            android:textColor="#ff000000" />
+    </FrameLayout>
+    <include layout="@layout/or_line" />
+    <FrameLayout
+        android:id="@id/loginWithEmail"
+        style="@style/NavigationButton"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="3.0dip"
+            android:gravity="center"
+            android:text="  Sign up with your email address"
+            android:textColor="#ff000000" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:text="Let's create an account and enjoy!"/>
+</LinearLayout>
